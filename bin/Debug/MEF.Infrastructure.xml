@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MEF.Infrastructure</name>
+    </assembly>
+    <members>
+        <member name="T:MEF.Infrastructure.ISqlQueryProcessor">
+            <summary>
+            Processor for, update, insert, create and delete sql commands
+            </summary>
+        </member>
+    </members>
+</doc>

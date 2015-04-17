@@ -1,0 +1,14 @@
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Data\bin\Debug\BTZ.Data.dll.config
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Data\bin\Debug\BTZ.Data.dll
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Data\bin\Debug\BTZ.Data.pdb
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Data\bin\Debug\MySql.Data.dll
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Data\bin\Debug\ServiceStack.Common.dll
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Data\bin\Debug\ServiceStack.Interfaces.dll
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Data\bin\Debug\ServiceStack.OrmLite.dll
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Data\bin\Debug\ServiceStack.OrmLite.MySql.dll
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Data\bin\Debug\ServiceStack.Text.dll
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Data\bin\Debug\ServiceStack.Text.xml
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Data\bin\Debug\ServiceStack.Common.xml
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Data\obj\Debug\BTZ.Data.dll
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Data\obj\Debug\BTZ.Data.pdb
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Data\obj\Debug\BTZ.Data.csprojResolveAssemblyReference.cache

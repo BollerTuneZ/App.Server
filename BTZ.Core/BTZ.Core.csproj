@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B039E7E0-5DAC-48F8-954F-A35DB8D36E11}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BTZ.Core</RootNamespace>
+    <AssemblyName>BTZ.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MessageProcessor\LogInMessageProcessor.cs" />
+    <Compile Include="Login\LoginManager.cs" />
+    <Compile Include="Hosts\BTZHosts.cs" />
+    <Compile Include="TinyIoC.cs" />
+    <Compile Include="Services\AppService.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="MessageProcessor\" />
+    <Folder Include="Login\" />
+    <Folder Include="Hosts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BTZ.Infrastructure\BTZ.Infrastructure.csproj">
+      <Project>{E686E628-5F44-486E-B911-E0B825B61DBD}</Project>
+      <Name>BTZ.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BTZ.DataAccess\BTZ.DataAccess.csproj">
+      <Project>{13917D91-CD3A-4591-9DB4-0CACFDE1750F}</Project>
+      <Name>BTZ.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BTZ.Communication\BTZ.Communication.csproj">
+      <Project>{677E1B58-9146-4087-B9AC-96C44219A94F}</Project>
+      <Name>BTZ.Communication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BTZ.Common\BTZ.Common.csproj">
+      <Project>{AE9AA53D-62D8-4791-A58C-58525AD6A4EB}</Project>
+      <Name>BTZ.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BTZ.Data\BTZ.Data.csproj">
+      <Project>{A3374A6A-986D-4305-9A6E-4E4F6E1570E5}</Project>
+      <Name>BTZ.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BTZ.Common\BTZ.Common.Communication\BTZ.Common.Communication.csproj">
+      <Project>{97B1985C-BC16-48A1-A300-72E234FE64F4}</Project>
+      <Name>BTZ.Common.Communication</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

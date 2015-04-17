@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MEF.Core</name>
+    </assembly>
+    <members>
+        <member name="T:MEF.Core.BaseParser">
+            <summary>
+            BasePaser who is able to convert Objects into Table objects
+            </summary>
+        </member>
+        <member name="M:MEF.Core.BaseParser.getTable(System.Object,System.String)">
+            <summary>
+            Gets the table.
+            </summary>
+            <returns>A bunch of tables wich can be executed by sql</returns>
+            <param name="obj">Object. Any class with properties</param>
+        </member>
+        <member name="M:MEF.Core.BaseParser.getTable(System.Object)">
+            <summary>
+            Gets the tables.
+            </summary>
+            <returns>The table.</returns>
+            <param name="obj">Object.</param>
+        </member>
+        <member name="M:MEF.Core.BaseParser.GenerateTable">
+            <summary>
+            Generates the table.
+            </summary>
+            <returns>A List with Table(s)</returns>
+        </member>
+        <member name="M:MEF.Core.BaseParser.GenerateTableFromList``1(System.Collections.Generic.List{``0},System.String,System.String)">
+            <summary>
+            Experimental
+            shoud convert PrimitvTyp Lists into a table
+            </summary>
+            <returns>The table from list.</returns>
+            <param name="list">List.</param>
+            <param name="name">Name.</param>
+            <param name="databasename">Databasename.</param>
+            <typeparam name="TEntity">The 1st type parameter.</typeparam>
+        </member>
+        <member name="M:MEF.Core.BaseParser.GetProperty(System.Reflection.PropertyInfo)">
+            <summary>
+            Gets the property.
+            </summary>
+            <returns>The property.</returns>
+            <param name="info">Infos about name value and valuetype</param>
+        </member>
+        <member name="P:MEF.Core.BaseParser.mDbname">
+            <summary>
+            Gets or sets the m dbname.
+            </summary>
+            <value>The m dbname.</value>
+        </member>
+        <member name="T:MEF.Core.ConnectionInfo">
+            <summary>
+            Stores the DatabaseInformations
+            </summary>
+        </member>
+        <member name="M:MEF.Core.ConnectionInfo.GetSevername">
+            <summary>
+            Gets the severname.
+            </summary>
+            <returns>The severname.</returns>
+        </member>
+        <member name="M:MEF.Core.ConnectionInfo.GetDatabasename">
+            <summary>
+            Gets the databasename.
+            </summary>
+            <returns>The databasename.</returns>
+        </member>
+        <member name="M:MEF.Core.ConnectionInfo.GetUser">
+            <summary>
+            Gets the user.
+            </summary>
+            <returns>The user.</returns>
+        </member>
+        <member name="M:MEF.Core.ConnectionInfo.GetPassword">
+            <summary>
+            Gets the password.
+            </summary>
+            <returns>The password.</returns>
+        </member>
+        <member name="M:MEF.Core.ConnectionInfo.GetConnectionString">
+            <summary>
+            Gets the connection string.
+            </summary>
+            <returns>The connection string.</returns>
+        </member>
+        <member name="P:MEF.Core.ConnectionInfo.Servername">
+            <summary>
+            Gets or sets the servername.
+            </summary>
+            <value>The servername.</value>
+        </member>
+        <member name="P:MEF.Core.ConnectionInfo.Databasename">
+            <summary>
+            Gets or sets the databasename.
+            </summary>
+            <value>The databasename.</value>
+        </member>
+        <member name="P:MEF.Core.ConnectionInfo.User">
+            <summary>
+            Gets or sets the user.
+            </summary>
+            <value>The user.</value>
+        </member>
+        <member name="P:MEF.Core.ConnectionInfo.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+            <value>The password.</value>
+        </member>
+        <member name="P:MEF.Core.ConnectionInfo.ConnectionString">
+            <summary>
+            Gets or sets the connection string.
+            </summary>
+            <value>The connection string.</value>
+        </member>
+        <member name="T:MEF.Core.Connection">
+            <summary>
+            Is the Interface between Framework and MySqlDatabase
+            </summary>
+        </member>
+        <member name="M:MEF.Core.Connection.#ctor(MEF.Infrastructure.IDBConnectionInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MEF.Core.Connection"/> class.
+            </summary>
+            <param name="info">Info.</param>
+        </member>
+        <member name="M:MEF.Core.Connection.Open">
+            <summary>
+            Open the Databaseconnection.
+            </summary>
+        </member>
+        <member name="M:MEF.Core.Connection.Close">
+            <summary>
+            Closes the Databaseconnection
+            </summary>
+        </member>
+        <member name="P:MEF.Core.Connection.DbConnection">
+            <summary>
+            Gets or sets the db connection.
+            </summary>
+            <value>The db connection.</value>
+        </member>
+        <member name="T:MEF.Core.BaseDecoder">
+            <summary>
+            Decodes the given SQLData in one Class Object
+            </summary>
+        </member>
+        <member name="M:MEF.Core.BaseDecoder.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MEF.Core.BaseDecoder"/> class.
+            </summary>
+        </member>
+        <member name="M:MEF.Core.BaseDecoder.Decode(System.Collections.Generic.List{System.Object},Common.Table,System.Object)">
+            <summary>
+            Decodes a given object list into the parent and returns it
+            </summary>
+            <param name="objects">SQldatabase objects</param>
+            <param name="parent">EntityBaseClass</param>
+        </member>
+        <member name="T:MEF.Core.LoggerConfig">
+            <summary>
+            Logger config.
+            </summary>
+        </member>
+        <member name="M:MEF.Core.LoggerConfig.Setup">
+            <summary>
+            Setup loggerconfig
+            </summary>
+        </member>
+        <member name="T:MEF.Core.SqlQueryProcessor">
+            <summary>
+            Sql query processor.
+            </summary>
+        </member>
+        <!-- Ungültiger XML-Kommentar wurde für den Member "M:MEF.Core.SqlQueryProcessor.GetTableStr(Common.Table,System.Boolean)" ignoriert -->
+        <member name="M:MEF.Core.SqlQueryProcessor.DELETE(Common.Table)">
+            <summary>
+            DELET the specified table.
+            pattern DELETE FROM `entityTest`.`Person` WHERE `Id`='1';
+            </summary>
+            <param name="table">Table.</param>
+        </member>
+        <member name="T:MEF.Core.Context">
+            <summary>
+            The Context is the Frameworkcontroller
+            </summary>
+        </member>
+        <member name="M:MEF.Core.Context.CreateDatabase(System.Boolean)">
+            <summary>
+            Creates the database.
+            </summary>
+            <returns><c>true</c>, if database was created, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:MEF.Core.Context.Create">
+            <summary>
+            Creates the Tables
+            </summary>
+        </member>
+        <member name="M:MEF.Core.Context.Insert``1(``0)">
+            <summary>
+            Insert the specified entity.
+            </summary>
+            <param name="entity">Entity.</param>
+            <typeparam name="TEntity">The 1st type parameter.</typeparam>
+        </member>
+        <member name="M:MEF.Core.Context.Update``1(``0)">
+            <summary>
+            Update the specified entity.
+            </summary>
+            <param name="entity">Entity.</param>
+            <typeparam name="TEntity">The 1st type parameter.</typeparam>
+        </member>
+        <member name="M:MEF.Core.Context.Delete``1(``0)">
+            <summary>
+            Delete the specified entity.
+            </summary>
+            <param name="entity">Entity.</param>
+            <typeparam name="TEntity">The 1st type parameter.</typeparam>
+        </member>
+        <member name="M:MEF.Core.Context.GetTable``1(System.Type)">
+            <summary>
+            Gets the table.
+            </summary>
+            <returns>The table.</returns>
+            <param name="type">Type.</param>
+            <typeparam name="TEntity">The 1st type parameter.</typeparam>
+        </member>
+        <member name="M:MEF.Core.Context.Parse">
+            <summary>
+            Parses the Tables.
+            </summary>
+        </member>
+        <member name="T:MEF.Core.EntityInitializer">
+            <summary>
+            initialize the nessary Classes and so on.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTZ.Server", "BTZ.Server\BTZ.Server.csproj", "{18E777BD-6BB6-4519-B4C8-E0822589A5B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTZ.DataAccess", "BTZ.DataAccess\BTZ.DataAccess.csproj", "{13917D91-CD3A-4591-9DB4-0CACFDE1750F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTZ.Infrastructure", "BTZ.Infrastructure\BTZ.Infrastructure.csproj", "{E686E628-5F44-486E-B911-E0B825B61DBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTZ.Core", "BTZ.Core\BTZ.Core.csproj", "{B039E7E0-5DAC-48F8-954F-A35DB8D36E11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTZ.Communication", "BTZ.Communication\BTZ.Communication.csproj", "{677E1B58-9146-4087-B9AC-96C44219A94F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTZ.Data", "BTZ.Data\BTZ.Data.csproj", "{A3374A6A-986D-4305-9A6E-4E4F6E1570E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{BB0B693E-A2DA-401C-8F2A-5EC41CC8B2DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTZ.Common", "BTZ.Common\BTZ.Common.csproj", "{AE9AA53D-62D8-4791-A58C-58525AD6A4EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTZ.Common.Communication", "BTZ.Common\BTZ.Common.Communication\BTZ.Common.Communication.csproj", "{97B1985C-BC16-48A1-A300-72E234FE64F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13917D91-CD3A-4591-9DB4-0CACFDE1750F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{13917D91-CD3A-4591-9DB4-0CACFDE1750F}.Debug|x86.Build.0 = Debug|Any CPU
+		{13917D91-CD3A-4591-9DB4-0CACFDE1750F}.Release|x86.ActiveCfg = Release|Any CPU
+		{13917D91-CD3A-4591-9DB4-0CACFDE1750F}.Release|x86.Build.0 = Release|Any CPU
+		{18E777BD-6BB6-4519-B4C8-E0822589A5B0}.Debug|x86.ActiveCfg = Debug|x86
+		{18E777BD-6BB6-4519-B4C8-E0822589A5B0}.Debug|x86.Build.0 = Debug|x86
+		{18E777BD-6BB6-4519-B4C8-E0822589A5B0}.Release|x86.ActiveCfg = Release|x86
+		{18E777BD-6BB6-4519-B4C8-E0822589A5B0}.Release|x86.Build.0 = Release|x86
+		{677E1B58-9146-4087-B9AC-96C44219A94F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{677E1B58-9146-4087-B9AC-96C44219A94F}.Debug|x86.Build.0 = Debug|Any CPU
+		{677E1B58-9146-4087-B9AC-96C44219A94F}.Release|x86.ActiveCfg = Release|Any CPU
+		{677E1B58-9146-4087-B9AC-96C44219A94F}.Release|x86.Build.0 = Release|Any CPU
+		{97B1985C-BC16-48A1-A300-72E234FE64F4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{97B1985C-BC16-48A1-A300-72E234FE64F4}.Debug|x86.Build.0 = Debug|Any CPU
+		{97B1985C-BC16-48A1-A300-72E234FE64F4}.Release|x86.ActiveCfg = Release|Any CPU
+		{97B1985C-BC16-48A1-A300-72E234FE64F4}.Release|x86.Build.0 = Release|Any CPU
+		{A3374A6A-986D-4305-9A6E-4E4F6E1570E5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A3374A6A-986D-4305-9A6E-4E4F6E1570E5}.Debug|x86.Build.0 = Debug|Any CPU
+		{A3374A6A-986D-4305-9A6E-4E4F6E1570E5}.Release|x86.ActiveCfg = Release|Any CPU
+		{A3374A6A-986D-4305-9A6E-4E4F6E1570E5}.Release|x86.Build.0 = Release|Any CPU
+		{AE9AA53D-62D8-4791-A58C-58525AD6A4EB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AE9AA53D-62D8-4791-A58C-58525AD6A4EB}.Debug|x86.Build.0 = Debug|Any CPU
+		{AE9AA53D-62D8-4791-A58C-58525AD6A4EB}.Release|x86.ActiveCfg = Release|Any CPU
+		{AE9AA53D-62D8-4791-A58C-58525AD6A4EB}.Release|x86.Build.0 = Release|Any CPU
+		{B039E7E0-5DAC-48F8-954F-A35DB8D36E11}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B039E7E0-5DAC-48F8-954F-A35DB8D36E11}.Debug|x86.Build.0 = Debug|Any CPU
+		{B039E7E0-5DAC-48F8-954F-A35DB8D36E11}.Release|x86.ActiveCfg = Release|Any CPU
+		{B039E7E0-5DAC-48F8-954F-A35DB8D36E11}.Release|x86.Build.0 = Release|Any CPU
+		{E686E628-5F44-486E-B911-E0B825B61DBD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E686E628-5F44-486E-B911-E0B825B61DBD}.Debug|x86.Build.0 = Debug|Any CPU
+		{E686E628-5F44-486E-B911-E0B825B61DBD}.Release|x86.ActiveCfg = Release|Any CPU
+		{E686E628-5F44-486E-B911-E0B825B61DBD}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AE9AA53D-62D8-4791-A58C-58525AD6A4EB} = {BB0B693E-A2DA-401C-8F2A-5EC41CC8B2DC}
+		{97B1985C-BC16-48A1-A300-72E234FE64F4} = {BB0B693E-A2DA-401C-8F2A-5EC41CC8B2DC}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Communication\bin\Debug\BTZ.Communication.dll
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Communication\bin\Debug\BTZ.Communication.pdb
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Communication\bin\Debug\BTZ.Common.dll
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Communication\bin\Debug\BTZ.Common.pdb
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Communication\obj\Debug\BTZ.Communication.csprojResolveAssemblyReference.cache
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Communication\obj\Debug\BTZ.Communication.dll
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Communication\obj\Debug\BTZ.Communication.pdb

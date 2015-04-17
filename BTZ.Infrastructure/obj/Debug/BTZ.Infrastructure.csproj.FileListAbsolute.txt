@@ -1,0 +1,6 @@
+C:\Git\BollerTuneZOS\BTZ.Server\bin\Debug\BTZ.Infrastructure.xml
+C:\Git\BollerTuneZOS\BTZ.Server\bin\Debug\BTZ.Infrastructure.dll
+C:\Git\BollerTuneZOS\BTZ.Server\bin\Debug\BTZ.Infrastructure.pdb
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Infrastructure\obj\Debug\BTZ.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Infrastructure\obj\Debug\BTZ.Infrastructure.dll
+C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Infrastructure\obj\Debug\BTZ.Infrastructure.pdb

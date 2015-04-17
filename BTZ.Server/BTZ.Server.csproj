@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{18E777BD-6BB6-4519-B4C8-E0822589A5B0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BTZ.Server</RootNamespace>
+    <AssemblyName>BTZ.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Log\LogSetup.cs" />
+    <Compile Include="Bootstrap.cs" />
+    <Compile Include="ServerStart.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Log\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BTZ.Common\BTZ.Common.csproj">
+      <Project>{AE9AA53D-62D8-4791-A58C-58525AD6A4EB}</Project>
+      <Name>BTZ.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BTZ.Communication\BTZ.Communication.csproj">
+      <Project>{677E1B58-9146-4087-B9AC-96C44219A94F}</Project>
+      <Name>BTZ.Communication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BTZ.Core\BTZ.Core.csproj">
+      <Project>{B039E7E0-5DAC-48F8-954F-A35DB8D36E11}</Project>
+      <Name>BTZ.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BTZ.DataAccess\BTZ.DataAccess.csproj">
+      <Project>{13917D91-CD3A-4591-9DB4-0CACFDE1750F}</Project>
+      <Name>BTZ.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BTZ.Infrastructure\BTZ.Infrastructure.csproj">
+      <Project>{E686E628-5F44-486E-B911-E0B825B61DBD}</Project>
+      <Name>BTZ.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BTZ.Data\BTZ.Data.csproj">
+      <Project>{A3374A6A-986D-4305-9A6E-4E4F6E1570E5}</Project>
+      <Name>BTZ.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
