@@ -1,7 +1,7 @@
 ﻿using System;
-using BTZ.Common.Communication;
 using BTZ.Infrastructure;
 using Newtonsoft.Json;
+using BTZ.Common;
 
 
 namespace BTZ.Core
@@ -10,11 +10,11 @@ namespace BTZ.Core
 	{
 		ILogInMessageProcessor _loginMessageProcessor;
 
-
-		public AppService (ILogInMessageProcessor _loginMessageProcessor)
+		public AppService ()
 		{
-			this._loginMessageProcessor = _loginMessageProcessor;
+			this._loginMessageProcessor = TinyIoC.TinyIoCContainer.Current.Resolve<ILogInMessageProcessor> ();
 		}
+
 
 		#region IBaseAppService implementation
 
@@ -36,6 +36,12 @@ namespace BTZ.Core
 		public string SendWallPost (string token, string data)
 		{
 			throw new NotImplementedException ();
+		}
+
+
+		public void Test ()
+		{
+			Console.WriteLine ("Hallo Welt");
 		}
 
 		#endregion

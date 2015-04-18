@@ -37,6 +37,9 @@
     </Reference>
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="Zyan.Communication">
+      <HintPath>..\packages\Zyan.2.6\lib\net45\Zyan.Communication.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -45,6 +48,8 @@
     <Compile Include="Hosts\BTZHosts.cs" />
     <Compile Include="TinyIoC.cs" />
     <Compile Include="Services\AppService.cs" />
+    <Compile Include="Services\ServiceTest.cs" />
+    <Compile Include="Services\TcpService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -73,10 +78,6 @@
     <ProjectReference Include="..\BTZ.Data\BTZ.Data.csproj">
       <Project>{A3374A6A-986D-4305-9A6E-4E4F6E1570E5}</Project>
       <Name>BTZ.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BTZ.Common\BTZ.Common.Communication\BTZ.Common.Communication.csproj">
-      <Project>{97B1985C-BC16-48A1-A300-72E234FE64F4}</Project>
-      <Name>BTZ.Common.Communication</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

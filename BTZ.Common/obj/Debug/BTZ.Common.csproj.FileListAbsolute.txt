@@ -2,3 +2,9 @@ C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Common\bin\Debug\BTZ.Common.dll
 C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Common\bin\Debug\BTZ.Common.pdb
 C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Common\obj\Debug\BTZ.Common.dll
 C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Common\obj\Debug\BTZ.Common.pdb
+E:\Jonas\BTZ\bin\Debug\BTZ.Common.dll
+E:\Jonas\BTZ\bin\Debug\BTZ.Common.pdb
+E:\Jonas\BTZ\App.Server\bin\Debug\BTZ.Common.dll
+E:\Jonas\BTZ\App.Server\bin\Debug\BTZ.Common.pdb
+E:\Jonas\BTZ\App.Server\BTZ.Common\obj\Debug\BTZ.Common.dll
+E:\Jonas\BTZ\App.Server\BTZ.Common\obj\Debug\BTZ.Common.pdb

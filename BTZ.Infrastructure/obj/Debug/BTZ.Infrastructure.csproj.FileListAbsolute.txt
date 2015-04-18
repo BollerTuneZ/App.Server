@@ -4,3 +4,9 @@ C:\Git\BollerTuneZOS\BTZ.Server\bin\Debug\BTZ.Infrastructure.pdb
 C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Infrastructure\obj\Debug\BTZ.Infrastructure.csprojResolveAssemblyReference.cache
 C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Infrastructure\obj\Debug\BTZ.Infrastructure.dll
 C:\Git\BollerTuneZOS\BTZ.Server\BTZ.Infrastructure\obj\Debug\BTZ.Infrastructure.pdb
+E:\Jonas\BTZ\App.Server\bin\Debug\BTZ.Infrastructure.xml
+E:\Jonas\BTZ\App.Server\bin\Debug\BTZ.Infrastructure.dll
+E:\Jonas\BTZ\App.Server\bin\Debug\BTZ.Infrastructure.pdb
+E:\Jonas\BTZ\App.Server\BTZ.Infrastructure\obj\Debug\BTZ.Infrastructure.csprojResolveAssemblyReference.cache
+E:\Jonas\BTZ\App.Server\BTZ.Infrastructure\obj\Debug\BTZ.Infrastructure.dll
+E:\Jonas\BTZ\App.Server\BTZ.Infrastructure\obj\Debug\BTZ.Infrastructure.pdb
