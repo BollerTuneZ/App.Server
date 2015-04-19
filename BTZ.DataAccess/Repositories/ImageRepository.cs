@@ -77,7 +77,7 @@ namespace BTZ.DataAccess
 			return Image.ByteToImage (rawFile);
 		}
 
-		byte[] IImageRepository.GetImage (string path)
+		byte[] IImageRepository.GetImageBytes (string path)
 		{
 			var rawFile = _fileHelper.ReadFile (path);
 
@@ -88,7 +88,7 @@ namespace BTZ.DataAccess
 			return rawFile;
 		}
 
-		Bitmap IImageRepository.GetImage (string path)
+		Bitmap IImageRepository.GetBitmap (string path)
 		{
 			var rawFile = _fileHelper.ReadFile (path);
 

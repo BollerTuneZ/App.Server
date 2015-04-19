@@ -46,5 +46,142 @@
             Stopt die Services
             </summary>
         </member>
+        <member name="T:BTZ.Infrastructure.IFileHelper">
+            <summary>
+            Helferklasse um Dateien zu schreiben und zu lesen.
+            Verzeichnisse erstellen usw.
+            Jonas Ahlf 19.04.2015 22:29:30
+            </summary>
+        </member>
+        <member name="M:BTZ.Infrastructure.IFileHelper.ReadFile(System.String)">
+            <summary>
+            Liest eine Datei und gibt diese als bytearray zurück
+            </summary>
+            <returns>The file.</returns>
+            <param name="filename">Filename.</param>
+        </member>
+        <member name="M:BTZ.Infrastructure.IFileHelper.GetReadFileStream(System.String)">
+            <summary>
+            Öffnet einen FileStream und gibt ihn zurück
+            </summary>
+            <returns>The file stream.</returns>
+            <param name="path">Path.</param>
+        </member>
+        <member name="M:BTZ.Infrastructure.IFileHelper.WriteFile(System.String,System.Byte[])">
+            <summary>
+            Schreibt eine Datei
+            </summary>
+            <returns><c>true</c>, if file was writed, <c>false</c> otherwise.</returns>
+            <param name="path">Path.</param>
+            <param name="data">Data.</param>
+        </member>
+        <member name="M:BTZ.Infrastructure.IFileHelper.GetWriteFileStream(System.String)">
+            <summary>
+            Gibt einen FileStream zum schreiben einer datei zurück
+            </summary>
+            <returns>The write file stream.</returns>
+            <param name="path">Path.</param>
+        </member>
+        <member name="M:BTZ.Infrastructure.IFileHelper.DeleteFile(System.String)">
+            <summary>
+            Löscht eine Datei
+            </summary>
+            <returns><c>true</c>, if file was deleted, <c>false</c> otherwise.</returns>
+            <param name="path">Path.</param>
+        </member>
+        <member name="M:BTZ.Infrastructure.IFileHelper.CreateDirectory(System.String)">
+            <summary>
+            Erstellt ein verzeichnis
+            </summary>
+            <returns><c>true</c>, if directory was created, <c>false</c> otherwise.</returns>
+            <param name="path">Path.</param>
+        </member>
+        <member name="M:BTZ.Infrastructure.IFileHelper.ReadDirectoryFiles(System.String)">
+            <summary>
+            Liest ein Verzeichnis aus und gibt die Dateien,
+            die sich in diesem befinden, zurück
+            </summary>
+            <returns>The directory files.</returns>
+            <param name="path">Path.</param>
+        </member>
+        <member name="T:BTZ.Infrastructure.IImageRepository">
+            <summary>
+            Verwaltet die Speicherung und das Lesen von Bilddateien
+            Jonas Ahlf 19.04.2015 22:38:47
+            </summary>
+        </member>
+        <member name="M:BTZ.Infrastructure.IImageRepository.SaveImage(System.Drawing.Image)">
+            <summary>
+            Speichert ein Bild ab und gibt dessen Pfad zurück
+            </summary>
+            <returns>The image.</returns>
+            <param name="image">Image.</param>
+        </member>
+        <member name="M:BTZ.Infrastructure.IImageRepository.SaveImage(System.Byte[])">
+            <summary>
+            Speichert ein Bild ab und gibt dessen Pfad zurück
+            </summary>
+            <returns>The image.</returns>
+            <param name="image">Image.</param>
+        </member>
+        <member name="M:BTZ.Infrastructure.IImageRepository.SaveImage(System.Drawing.Bitmap)">
+            <summary>
+            Speichert ein Bild ab und gibt dessen Pfad zurück
+            </summary>
+            <returns>The image.</returns>
+            <param name="image">Image.</param>
+        </member>
+        <member name="M:BTZ.Infrastructure.IImageRepository.DeleteImage(System.String)">
+            <summary>
+            Löscht ein Bild
+            </summary>
+            <returns><c>true</c>, if image was deleted, <c>false</c> otherwise.</returns>
+            <param name="path">Path.</param>
+        </member>
+        <member name="M:BTZ.Infrastructure.IImageRepository.GetImage(System.String)">
+            <summary>
+            Gibt ein Bild mit dem angegebenen Pfad zurück
+            </summary>
+            <returns>The image.</returns>
+            <param name="path">Path.</param>
+        </member>
+        <member name="M:BTZ.Infrastructure.IImageRepository.GetImageBytes(System.String)">
+            <summary>
+            Gibt ein Bild mit dem angegebenen Pfad zurück
+            </summary>
+            <returns>The image.</returns>
+            <param name="path">Path.</param>
+        </member>
+        <member name="M:BTZ.Infrastructure.IImageRepository.GetBitmap(System.String)">
+            <summary>
+            Gibt ein Bild mit dem angegebenen Pfad zurück
+            </summary>
+            <returns>The image.</returns>
+            <param name="path">Path.</param>
+        </member>
+        <member name="T:BTZ.Infrastructure.IWallPostRepository">
+            <summary>
+            Repository für das Newsfeed, um WallPosts zu beziehen
+            Jonas Ahlf 19.04.2015 23:46:31
+            </summary>
+        </member>
+        <member name="M:BTZ.Infrastructure.IWallPostRepository.AddWallPost(BTZ.Data.WallPost)">
+            <summary>
+            Adds the wall post.
+            </summary>
+            <param name="post">Post.</param>
+        </member>
+        <member name="M:BTZ.Infrastructure.IWallPostRepository.GetAllWallPosts">
+            <summary>
+            Gets all wall posts.
+            </summary>
+            <returns>The all wall posts.</returns>
+        </member>
+        <member name="M:BTZ.Infrastructure.IWallPostRepository.DeleteWallPost(BTZ.Data.WallPost)">
+            <summary>
+            Deletes the wall post.
+            </summary>
+            <param name="post">Post.</param>
+        </member>
     </members>
 </doc>

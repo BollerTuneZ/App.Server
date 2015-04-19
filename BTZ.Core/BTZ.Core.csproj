@@ -40,6 +40,12 @@
     <Reference Include="Zyan.Communication">
       <HintPath>..\packages\Zyan.2.6\lib\net45\Zyan.Communication.dll</HintPath>
     </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -50,6 +56,7 @@
     <Compile Include="Services\AppService.cs" />
     <Compile Include="Services\ServiceTest.cs" />
     <Compile Include="Services\TcpService.cs" />
+    <Compile Include="MessageProcessor\NewsfeedMessageProcessor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

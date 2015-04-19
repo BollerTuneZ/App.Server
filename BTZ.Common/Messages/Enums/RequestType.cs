@@ -7,6 +7,7 @@ namespace BTZ.Common
 	/// </summary>
 	public enum RequestType
 	{
+		Non,
 		GetSingle,
 		GetAll,
 		GetUpdate,

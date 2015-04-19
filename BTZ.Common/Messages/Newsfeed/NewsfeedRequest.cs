@@ -14,6 +14,8 @@ namespace BTZ.Common
 
 		public int[] IdPaket{ get; set;}
 
+		public string Token{ get; set;}
+
 		public NewsfeedDto SingleDto{get;set;}
 
 		public NewsfeedDto[] Paket{get;set;}

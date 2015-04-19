@@ -43,6 +43,8 @@
     <Compile Include="Messages\Newsfeed\NewsfeedRequest.cs" />
     <Compile Include="Messages\Enums\RequestType.cs" />
     <Compile Include="DTO\Newsfeed\NewsfeedDto.cs" />
+    <Compile Include="Messages\ErrorMessage.cs" />
+    <Compile Include="DTO\ResponseBase.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

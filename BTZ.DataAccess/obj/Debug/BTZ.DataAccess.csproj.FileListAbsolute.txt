@@ -5,10 +5,4 @@ C:\Git\BollerTuneZOS\BTZ.Server\bin\Debug\BTZ.DataAccess.xml
 C:\Git\BollerTuneZOS\BTZ.Server\BTZ.DataAccess\obj\Debug\BTZ.DataAccess.csprojResolveAssemblyReference.cache
 C:\Git\BollerTuneZOS\BTZ.Server\BTZ.DataAccess\obj\Debug\BTZ.DataAccess.dll
 C:\Git\BollerTuneZOS\BTZ.Server\BTZ.DataAccess\obj\Debug\BTZ.DataAccess.pdb
-E:\Jonas\BTZ\App.Server\bin\Debug\BTZ.DataAccess.dll.config
-E:\Jonas\BTZ\App.Server\bin\Debug\BTZ.DataAccess.dll
-E:\Jonas\BTZ\App.Server\bin\Debug\BTZ.DataAccess.pdb
-E:\Jonas\BTZ\App.Server\bin\Debug\BTZ.DataAccess.xml
 E:\Jonas\BTZ\App.Server\BTZ.DataAccess\obj\Debug\BTZ.DataAccess.csprojResolveAssemblyReference.cache
-E:\Jonas\BTZ\App.Server\BTZ.DataAccess\obj\Debug\BTZ.DataAccess.dll
-E:\Jonas\BTZ\App.Server\BTZ.DataAccess\obj\Debug\BTZ.DataAccess.pdb

@@ -20,10 +20,8 @@ namespace BTZ.Server
 			TinyIoCContainer.Current.Register<ILoginManager,LoginManager> ().AsSingleton ();
 			TinyIoCContainer.Current.Register<ILogInMessageProcessor,LogInMessageProcessor> ().AsSingleton ();
 			TinyIoCContainer.Current.Register<IBTZHosts,BTZHosts> ();
-
-			var userRepo = TinyIoCContainer.Current.Resolve<IUserRepository> ();
-
-			userRepo.AddUser (new BTZ.Data.User (){ Username = "XMAN"});
+			TinyIoCContainer.Current.Register<IFileHelper,FileHelper> ();
+			TinyIoCContainer.Current.Register<IImageRepository,ImageRepository> ();
 
 		}
 	}

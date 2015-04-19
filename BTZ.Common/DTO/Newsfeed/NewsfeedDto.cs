@@ -2,7 +2,10 @@
 
 namespace BTZ.Common
 {
-	public class NewsfeedDto
+	/// <summary>
+	/// Newsfeed dto.
+	/// </summary>
+	public class NewsfeedDto : ResponseBase
 	{
 		public NewsfeedDto ()
 		{

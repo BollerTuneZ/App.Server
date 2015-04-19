@@ -63,6 +63,7 @@
     <Compile Include="IO\FileHelper.cs" />
     <Compile Include="Repositories\ImageRepository.cs" />
     <Compile Include="Util\ImageExtension.cs" />
+    <Compile Include="Repositories\WallPostRepository.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

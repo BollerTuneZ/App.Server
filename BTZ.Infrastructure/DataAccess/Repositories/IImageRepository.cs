@@ -48,13 +48,13 @@ namespace BTZ.Infrastructure
 		/// </summary>
 		/// <returns>The image.</returns>
 		/// <param name="path">Path.</param>
-		byte[] GetImage(string path);
+		byte[] GetImageBytes(string path);
 		/// <summary>
 		/// Gibt ein Bild mit dem angegebenen Pfad zurück
 		/// </summary>
 		/// <returns>The image.</returns>
 		/// <param name="path">Path.</param>
-		Bitmap GetImage(string path);
+		Bitmap GetBitmap(string path);
 
 
 	}

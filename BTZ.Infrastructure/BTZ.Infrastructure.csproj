@@ -43,6 +43,7 @@
     <Compile Include="Core\MessageProcessor\INewsfeedMessageProcessor.cs" />
     <Compile Include="DataAccess\IO\IFileHelper.cs" />
     <Compile Include="DataAccess\Repositories\IImageRepository.cs" />
+    <Compile Include="DataAccess\Repositories\IWallPostRepository.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
