@@ -51,7 +51,6 @@ namespace BTZ.Core
 
 					new Thread(() =>
 						HandleClient (s)).Start();
-
 				}
 
 				myList.Stop ();

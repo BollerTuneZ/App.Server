@@ -54,17 +54,22 @@
     <Reference Include="MySql.Data">
       <HintPath>..\..\..\..\Users\Jonas-Work\Downloads\mysql-connector-net-6.9.5-noinstall\v4.0\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="Core\DatabaseHandler.cs" />
+    <Compile Include="IO\FileHelper.cs" />
+    <Compile Include="Repositories\ImageRepository.cs" />
+    <Compile Include="Util\ImageExtension.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Core\" />
     <Folder Include="Repositories\" />
     <Folder Include="Util\" />
+    <Folder Include="IO\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BTZ.Infrastructure\BTZ.Infrastructure.csproj">

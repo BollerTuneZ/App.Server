@@ -51,15 +51,17 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
-    <Compile Include="Entities\Dashboard\BTZ\WallPost.cs" />
-    <Compile Include="Entities\Dashboard\Community\CWallPost.cs" />
     <Compile Include="Entities\Media\Binary.cs" />
     <Compile Include="Entities\Premission.cs" />
     <Compile Include="Entities\User\User.cs" />
+    <Compile Include="Entities\Newsfeed\WallPost.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\Newsfeed\" />
   </ItemGroup>
 </Project>

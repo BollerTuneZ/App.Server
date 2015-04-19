@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -39,6 +40,9 @@
     <Compile Include="DataAccess\ILoginManager.cs" />
     <Compile Include="Core\MessageProcessor\ILogInMessageProcessor.cs" />
     <Compile Include="Core\Hosts\IBTZHosts.cs" />
+    <Compile Include="Core\MessageProcessor\INewsfeedMessageProcessor.cs" />
+    <Compile Include="DataAccess\IO\IFileHelper.cs" />
+    <Compile Include="DataAccess\Repositories\IImageRepository.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

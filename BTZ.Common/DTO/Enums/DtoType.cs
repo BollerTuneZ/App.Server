@@ -5,7 +5,8 @@ namespace BTZ.Common
 	public enum DtoType
 	{
 		Login,
-		Register
+		Register,
+		Newsfeed
 
 
 	}

@@ -1,16 +1,17 @@
 ﻿<Properties StartupItem="BTZ.Server\BTZ.Server.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BTZ.Common\DTO\BaseDto.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="BTZ.Common\BTZ.CommonInterfaces\IBaseAppService.cs" Line="26" Column="1" />
-      <File FileName="BTZ.Core\Services\AppService.cs" Line="25" Column="3" />
-      <File FileName="BTZ.Common\IBaseAppService.cs" Line="9" Column="2" />
-      <File FileName="BTZ.Common\Messages\ReponseMessages\EntityMessage.cs" Line="2" Column="1" />
-      <File FileName="BTZ.Common\DTO\UserDto.cs" Line="8" Column="4" />
-      <File FileName="BTZ.Core\Services\ServiceTest.cs" Line="15" Column="3" />
-      <File FileName="BTZ.Common\DTO\Enums\DtoType.cs" Line="8" Column="11" />
-      <File FileName="BTZ.Common\DTO\BaseDto.cs" Line="10" Column="3" />
-      <File FileName="BTZ.Core\Services\TcpService.cs" Line="54" Column="4" />
+      <File FileName="BTZ.Common\BTZ.CommonInterfaces\IBaseAppService.cs" Line="1" Column="1" />
+      <File FileName="BTZ.Core\Services\AppService.cs" Line="1" Column="1" />
+      <File FileName="BTZ.Common\IBaseAppService.cs" Line="1" Column="1" />
+      <File FileName="BTZ.Common\Messages\ReponseMessages\EntityMessage.cs" Line="1" Column="1" />
+      <File FileName="BTZ.Common\DTO\UserDto.cs" Line="1" Column="1" />
+      <File FileName="BTZ.Core\Services\ServiceTest.cs" Line="1" Column="1" />
+      <File FileName="BTZ.Common\DTO\Enums\DtoType.cs" Line="1" Column="1" />
+      <File FileName="BTZ.Common\DTO\BaseDto.cs" Line="1" Column="1" />
+      <File FileName="BTZ.Core\Services\TcpService.cs" Line="1" Column="1" />
+      <File FileName="BTZ.Core\Hosts\BTZHosts.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -18,6 +19,8 @@
       <Breakpoint file="E:\Jonas\BTZ\App.Server\BTZ.Core\Services\AppService.cs" line="23" column="1" />
       <Breakpoint file="E:\Jonas\BTZ\App.Server\BTZ.Core\Services\AppService.cs" line="15" column="1" />
       <Breakpoint file="E:\Jonas\BTZ\App.Server\BTZ.Core\Services\ServiceTest.cs" line="12" column="1" />
+      <Breakpoint file="E:\Jonas\BTZ\App.Server\BTZ.Core\Services\TcpService.cs" line="52" column="1" />
+      <Breakpoint file="E:\Jonas\BTZ\App.Server\BTZ.Core\Services\TcpService.cs" line="68" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -40,6 +40,9 @@
     <Compile Include="IBaseAppService.cs" />
     <Compile Include="DTO\Enums\DtoType.cs" />
     <Compile Include="DTO\BaseDto.cs" />
+    <Compile Include="Messages\Newsfeed\NewsfeedRequest.cs" />
+    <Compile Include="Messages\Enums\RequestType.cs" />
+    <Compile Include="DTO\Newsfeed\NewsfeedDto.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -50,5 +53,7 @@
     <Folder Include="Messages\RequestMessages\Data\" />
     <Folder Include="DTO\" />
     <Folder Include="DTO\Enums\" />
+    <Folder Include="DTO\Newsfeed\" />
+    <Folder Include="Messages\Newsfeed\" />
   </ItemGroup>
 </Project>
