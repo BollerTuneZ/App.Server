@@ -16,7 +16,10 @@ namespace BTZ.Core
 
 		static readonly ILog s_log = LogManager.GetLogger (typeof(TcpService));
 
+		#region Processors
 		readonly ILogInMessageProcessor _loginMessageProcessor;
+		readonly INewsfeedMessageProcessor _newsfeedMessageProcessor;
+		#endregion
 
 		public TcpService ()
 		{
@@ -52,9 +55,6 @@ namespace BTZ.Core
 					new Thread(() =>
 						HandleClient (s)).Start();
 				}
-
-				myList.Stop ();
-
 			} catch (Exception e) {
 				s_log.Error (e);
 			}    
@@ -88,6 +88,9 @@ namespace BTZ.Core
 			case DtoType.Register:
 				result = _loginMessageProcessor.RegisterUser (dto.JsonObject);
 				break;
+			case DtoType.Newsfeed:
+				result = _newsfeedMessageProcessor.ProcessNewsfeedRequest (dto.JsonObject);
+				break;
 			default:
 				result = null;
 				break;
@@ -98,9 +101,7 @@ namespace BTZ.Core
 				client.Close ();
 				return;
 			}
-
 			sw.WriteLine (JsonConvert.SerializeObject (result));
-
 			client.Close ();
 		}
 

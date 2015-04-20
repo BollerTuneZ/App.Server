@@ -45,6 +45,7 @@
     <Compile Include="DTO\Newsfeed\NewsfeedDto.cs" />
     <Compile Include="Messages\ErrorMessage.cs" />
     <Compile Include="DTO\ResponseBase.cs" />
+    <Compile Include="Messages\ArrayMessage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

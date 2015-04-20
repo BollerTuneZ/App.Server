@@ -21,6 +21,8 @@ namespace BTZ.Core
 
 		string _requestNullMessage;
 		string _requestBadId;
+		string _requestBadAuth;
+
 
 		public NewsfeedMessageProcessor (IWallPostRepository _wallPostRepo,
 			IImageRepository _imageRepository, ILoginManager _loginManager)
@@ -56,12 +58,23 @@ namespace BTZ.Core
 					}
 				}
 			);
+			_requestBadAuth = JsonConvert.SerializeObject (
+				new NewsfeedDto()
+				{
+					Error = new ErrorMessage()
+					{
+						Type = DtoType.Newsfeed,
+						Message = "Bad Authentification"
+					}
+				}
+			);
 			#endregion
 			#region Mapping
 			Mapper.CreateMap<WallPost,NewsfeedDto>()
 				.ForMember(dest => dest.HeaderImage,opt => opt.Ignore())
 				.ForMember(dest => dest.Image,opt => opt.Ignore());
-
+			Mapper.CreateMap<NewsfeedDto,WallPost>()
+				.ForMember(d => d.Owner, s => s.Ignore());
 			#endregion
 		}
 
@@ -79,7 +92,7 @@ namespace BTZ.Core
 
 			if (tempRequest == null) {
 				s_log.Warn ("Could not parse request");
-				_requestNullMessage;
+				return _requestNullMessage;
 			}
 			return HandleRequest (tempRequest);
 		}
@@ -91,13 +104,12 @@ namespace BTZ.Core
 			switch (request.RequestType) {
 			case RequestType.GetAll:
 				return GetAllWallPosts ();
-				break;
 			case RequestType.GetSingle:
-
-				break;
+				return GetSingle (request);
+			case RequestType.PostSingle:
+				return ProcessSinglePost (request);
 			default:
 				return _requestNullMessage;
-				break;
 			}
 		}
 
@@ -105,13 +117,14 @@ namespace BTZ.Core
 
 		string GetAllWallPosts()
 		{
-			int[] ids = _wallPostRepo.GetAllWallPosts ().Select (i => i.Id).ToArray ();
-			return JsonConvert.SerializeObject (ids);
+			var  ids = _wallPostRepo.GetAllWallPosts ().Select (i => i.Id).ToArray ();
+
+			return JsonConvert.SerializeObject (new ArrayMessage(){Ids = ids});
 		}
 
 		string GetSingle(NewsfeedRequest request)
 		{
-			if (request.Id == null || request.Id == 0) {
+			if (request.Id == 0) {
 				s_log.Warn ("Request Single Newsfeed with Bad id");
 				return _requestBadId;
 			}
@@ -123,12 +136,46 @@ namespace BTZ.Core
 				return _requestBadId;
 			}
 
-
-
+			return JsonConvert.SerializeObject (ConvertWallPostToDto (wallpost));
 		}
 
 		#endregion
 
+		#region Post
+		string ProcessSinglePost(NewsfeedRequest request)
+		{
+			var user = _loginManager.VerifyToken (request.Token);
+			if (user == null) {
+				return _requestBadAuth;
+			}
+			if (request.SingleDto == null) {
+				return _requestNullMessage;
+			}
+
+			WallPost post = Mapper.Map<NewsfeedDto,WallPost> (request.SingleDto);
+			post.Owner = user;
+
+			if (request.SingleDto.HeaderImage != null) {
+				var headerImagePath = _imageRepository.SaveImage (request.SingleDto.HeaderImage);
+
+				if (headerImagePath.Item1) {
+					post.HeaderImage = headerImagePath.Item2;
+				}
+			}
+
+			if (request.SingleDto.Image != null) {
+				var imagePath = _imageRepository.SaveImage (request.SingleDto.Image);
+				if (imagePath.Item1) {
+					post.Image = imagePath.Item2;
+				}
+			}
+
+			_wallPostRepo.AddWallPost (post);
+			return JsonConvert.SerializeObject (new NewsfeedDto () {
+				Title = "OK"
+			});
+		}
+		#endregion
 
 		NewsfeedDto ConvertWallPostToDto(WallPost post)
 		{
@@ -137,7 +184,7 @@ namespace BTZ.Core
 			byte[] imageBytes;
 			byte[] headerImageBytes;
 			if (!String.IsNullOrEmpty(post.HeaderImage)) {
-				headerImageBytes = _imageRepository.GetImage (post.HeaderImage);
+				headerImageBytes = _imageRepository.GetImageBytes (post.HeaderImage);
 
 				if (headerImageBytes != null) {
 					dto.HeaderImage = headerImageBytes;
@@ -145,7 +192,7 @@ namespace BTZ.Core
 			}
 
 			if (!String.IsNullOrEmpty(post.Image)) {
-				imageBytes = _imageRepository.GetImage (post.Image);
+				imageBytes = _imageRepository.GetImageBytes (post.Image);
 
 				if (imageBytes != null) {
 					dto.Image = imageBytes;

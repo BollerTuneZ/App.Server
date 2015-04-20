@@ -9,12 +9,7 @@ namespace BTZ.Infrastructure
 	/// </summary>
 	public interface IImageRepository
 	{
-		/// <summary>
-		/// Speichert ein Bild ab und gibt dessen Pfad zurück
-		/// </summary>
-		/// <returns>The image.</returns>
-		/// <param name="image">Image.</param>
-		Tuple<bool,string> SaveImage(Image image);
+		
 
 		/// <summary>
 		/// Speichert ein Bild ab und gibt dessen Pfad zurück
@@ -23,12 +18,7 @@ namespace BTZ.Infrastructure
 		/// <param name="image">Image.</param>
 		Tuple<bool,string> SaveImage(byte[] image);
 
-		/// <summary>
-		/// Speichert ein Bild ab und gibt dessen Pfad zurück
-		/// </summary>
-		/// <returns>The image.</returns>
-		/// <param name="image">Image.</param>
-		Tuple<bool,string> SaveImage(Bitmap image);
+
 
 		/// <summary>
 		/// Löscht ein Bild

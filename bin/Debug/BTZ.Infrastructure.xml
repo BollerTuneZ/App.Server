@@ -110,21 +110,7 @@
             Jonas Ahlf 19.04.2015 22:38:47
             </summary>
         </member>
-        <member name="M:BTZ.Infrastructure.IImageRepository.SaveImage(System.Drawing.Image)">
-            <summary>
-            Speichert ein Bild ab und gibt dessen Pfad zurück
-            </summary>
-            <returns>The image.</returns>
-            <param name="image">Image.</param>
-        </member>
         <member name="M:BTZ.Infrastructure.IImageRepository.SaveImage(System.Byte[])">
-            <summary>
-            Speichert ein Bild ab und gibt dessen Pfad zurück
-            </summary>
-            <returns>The image.</returns>
-            <param name="image">Image.</param>
-        </member>
-        <member name="M:BTZ.Infrastructure.IImageRepository.SaveImage(System.Drawing.Bitmap)">
             <summary>
             Speichert ein Bild ab und gibt dessen Pfad zurück
             </summary>

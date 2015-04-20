@@ -74,7 +74,7 @@ namespace BTZ.DataAccess
 				return null;
 			}
 
-			return Image.ByteToImage (rawFile);
+			return null;
 		}
 
 		byte[] IImageRepository.GetImageBytes (string path)
