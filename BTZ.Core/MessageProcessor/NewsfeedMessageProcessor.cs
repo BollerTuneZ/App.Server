@@ -155,7 +155,7 @@ namespace BTZ.Core
 			WallPost post = Mapper.Map<NewsfeedDto,WallPost> (request.SingleDto);
 			post.Owner = user;
 
-			if (request.SingleDto.HeaderImage != null) {
+			if (request.SingleDto.HeaderImage.Count() > 1) {
 				var headerImagePath = _imageRepository.SaveImage (request.SingleDto.HeaderImage);
 
 				if (headerImagePath.Item1) {
@@ -163,7 +163,7 @@ namespace BTZ.Core
 				}
 			}
 
-			if (request.SingleDto.Image != null) {
+			if (request.SingleDto.Image.Count() > 1) {
 				var imagePath = _imageRepository.SaveImage (request.SingleDto.Image);
 				if (imagePath.Item1) {
 					post.Image = imagePath.Item2;

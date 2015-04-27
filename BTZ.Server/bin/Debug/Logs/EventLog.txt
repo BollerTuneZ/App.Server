@@ -1,4 +1,12 @@
-2015-04-27 15:17:24,783 [7] INFO  BTZ.Core.BTZHosts - Start Services...
-2015-04-27 15:17:25,008 [8] WARN  BTZ.DataAccess.FileHelper - Directory E:\Jonas\BTZ\App.Server\BTZ.Server\bin\Debug\Images, already exists
-2015-04-27 15:23:57,197 [13] INFO  BTZ.DataAccess.WallPostRepository - Added WallPost id=0
-2015-04-27 15:24:15,892 [16] INFO  BTZ.DataAccess.WallPostRepository - Added WallPost id=0
+2015-04-27 23:43:12,848 [7] INFO  BTZ.Core.BTZHosts - Start Services...
+2015-04-27 23:43:13,096 [8] WARN  BTZ.DataAccess.FileHelper - Directory E:\Jonas\BTZ\App.Server\BTZ.Server\bin\Debug\Images, already exists
+2015-04-27 23:44:03,172 [9] WARN  BTZ.DataAccess.FileHelper - File System.Byte[], does not exists
+2015-04-27 23:44:03,175 [9] WARN  BTZ.DataAccess.ImageRepository - Could not read Image, was null System.Byte[]
+2015-04-27 23:44:03,456 [10] WARN  BTZ.DataAccess.FileHelper - File System.Byte[], does not exists
+2015-04-27 23:44:03,457 [10] WARN  BTZ.DataAccess.ImageRepository - Could not read Image, was null System.Byte[]
+2015-04-27 23:44:03,566 [11] WARN  BTZ.DataAccess.FileHelper - File System.Byte[], does not exists
+2015-04-27 23:44:03,567 [11] WARN  BTZ.DataAccess.ImageRepository - Could not read Image, was null System.Byte[]
+2015-04-27 23:44:03,704 [12] WARN  BTZ.DataAccess.FileHelper - File System.Byte[], does not exists
+2015-04-27 23:44:03,705 [12] WARN  BTZ.DataAccess.ImageRepository - Could not read Image, was null System.Byte[]
+2015-04-27 23:44:03,809 [13] WARN  BTZ.DataAccess.FileHelper - File System.Byte[], does not exists
+2015-04-27 23:44:03,811 [13] WARN  BTZ.DataAccess.ImageRepository - Could not read Image, was null System.Byte[]
