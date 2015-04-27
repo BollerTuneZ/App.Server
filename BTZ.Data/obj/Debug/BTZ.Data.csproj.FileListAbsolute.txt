@@ -25,3 +25,4 @@ E:\Jonas\BTZ\App.Server\BTZ.Data\bin\Debug\ServiceStack.Text.xml
 E:\Jonas\BTZ\App.Server\BTZ.Data\bin\Debug\ServiceStack.Common.xml
 E:\Jonas\BTZ\App.Server\BTZ.Data\obj\Debug\BTZ.Data.dll
 E:\Jonas\BTZ\App.Server\BTZ.Data\obj\Debug\BTZ.Data.pdb
+E:\Jonas\BTZ\App.Server\BTZ.Data\obj\Debug\BTZ.Data.csprojResolveAssemblyReference.cache

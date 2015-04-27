@@ -24,6 +24,8 @@ namespace BTZ.Core
 		public TcpService ()
 		{
 			_loginMessageProcessor = TinyIoC.TinyIoCContainer.Current.Resolve<ILogInMessageProcessor> ();
+			_newsfeedMessageProcessor = TinyIoC.TinyIoCContainer.Current.Resolve<INewsfeedMessageProcessor> ();
+
 		}
 
 		public void Start()
@@ -101,7 +103,9 @@ namespace BTZ.Core
 				client.Close ();
 				return;
 			}
-			sw.WriteLine (JsonConvert.SerializeObject (result));
+
+			sw.WriteLine (result);
+			sw.Flush ();
 			client.Close ();
 		}
 

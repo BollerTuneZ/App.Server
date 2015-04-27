@@ -1,3 +1,4 @@
-2015-04-18 05:14:15,630 [1] INFO  BTZ.DataAccess.UserRepository - Added User XMAN
-2015-04-18 05:14:15,706 [7] INFO  BTZ.Core.BTZHosts - Start Services...
-2015-04-18 05:14:39,118 [9] INFO  BTZ.Core.LoginManager - Multiple registration of user Jonas, not allowed
+2015-04-27 15:17:24,783 [7] INFO  BTZ.Core.BTZHosts - Start Services...
+2015-04-27 15:17:25,008 [8] WARN  BTZ.DataAccess.FileHelper - Directory E:\Jonas\BTZ\App.Server\BTZ.Server\bin\Debug\Images, already exists
+2015-04-27 15:23:57,197 [13] INFO  BTZ.DataAccess.WallPostRepository - Added WallPost id=0
+2015-04-27 15:24:15,892 [16] INFO  BTZ.DataAccess.WallPostRepository - Added WallPost id=0

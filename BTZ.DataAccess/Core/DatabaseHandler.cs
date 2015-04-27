@@ -19,10 +19,13 @@ namespace BTZ.DataAccess
 
 			Database = "Server = 127.0.0.1; Database = btz; Uid = root; Pwd =".OpenDbConnection ();
 			Database.CreateTable<User> ();
-
+			Database.CreateTable<WallPost> ();
 		}
 
 		public IDbConnection Database;
+
+
+
 
 	}
 }

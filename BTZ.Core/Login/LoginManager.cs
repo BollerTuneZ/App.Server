@@ -21,6 +21,15 @@ namespace BTZ.Core
 			if (_userRepository == null) {
 				throw new ArgumentNullException ("UserRepository");
 			}
+			if (!_userRepository.GetAllUser().Any()) {
+				User defaultUser = new User () {
+					Username = "default",
+					Password = "Xc09Abz",
+					Token = "123498"
+				};
+
+				_userRepository.AddUser (defaultUser);
+			}
 		}
 		
 

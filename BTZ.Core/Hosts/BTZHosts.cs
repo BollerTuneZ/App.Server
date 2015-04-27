@@ -28,7 +28,7 @@ namespace BTZ.Core
 
 		public void Stop ()
 		{
-			_appService.UnregisterComponent<IBaseAppService> ();
+			//_appService.UnregisterComponent<IBaseAppService> ();
 		}
 
 		#endregion

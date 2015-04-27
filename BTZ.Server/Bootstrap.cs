@@ -22,6 +22,9 @@ namespace BTZ.Server
 			TinyIoCContainer.Current.Register<IBTZHosts,BTZHosts> ();
 			TinyIoCContainer.Current.Register<IFileHelper,FileHelper> ();
 			TinyIoCContainer.Current.Register<IImageRepository,ImageRepository> ();
+			TinyIoCContainer.Current.Register<IWallPostRepository,WallPostRepository> ();
+			TinyIoCContainer.Current.Register<INewsfeedMessageProcessor,NewsfeedMessageProcessor> ();
+
 
 		}
 	}
